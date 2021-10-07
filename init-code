@@ -1,0 +1,19 @@
+sudo apt-get update
+sudo apt-get -y upgrade
+wget https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
+sudo mv go /usr/local
+export PATH=$PATH:/usr/local/go/bin
+source ~/.profile
+go version
+echo go version go1.17.1 linux/amd64
+go test
+echo package go-binance: build constraints exclude all Go files in /home/yourcomputername/fibobot
+go env -w GO111MODULE=on
+
+//////cd something to go-binance path locate
+
+sudo cp -r go-binance/ /usr/local/go/src/
+
+////i use this wget https://github.com/syncthing/syncthing/releases/download/v1.18.3/syncthing-linux-amd64-v1.18.3.tar.gz
+////tar -xf syncthing-linux-amd64-v1.18.3.tar.gz
+
